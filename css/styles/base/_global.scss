@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: $font-1;
+    height: 100%;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: $mainRed;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    font-family: $font-1;
+    color: $mainRed;
+    font-size: 7rem;
+
+}

@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .grid-container {
+    margin-top: 150px;
+  }
+  
+  h1 {
+    font-family: $font-4;
+    font-size: 50px;
+    color: $mainRed;
+    text-align: center;
+}
+
+  h3 {
+    font-family: $font-4;
+    font-size: 36px;
+    color: $mainBlue;
+    text-align: center;
+  }
+  
+  .card_heading{
+    margin-top: 20px;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      margin: 20px 20px;
+      color: #d5d8dd;
+      text-align: center;
+      background-color: $paraGray;
+    }
+  
+    p {
+      font-family: $font-3;
+      font-size: 30px;
+  
+    }
+
+    .btn {
+      border: none;
+      outline: 0;
+      width: 200px;
+      display: inline;
+      padding: 8px;
+      background-color: rgba($mainRed, 0.5);
+      color: $mainBlue;
+      text-align: center;
+      cursor: pointer;
+      font-family: $font-3;
+      font-size: 20px;
+
+      a {
+        color: white;
+      }
+
+      &:hover {
+        background-color: $mainRed;
+      }
+    }
+
+
+    .fa-solid {
+      color: $paraGray;
+      font-size: 30px;
+      padding-left: 20px;
+    }
+
+    .heart {
+      color: $mainBlue;
+      font-size: 35px;
+    }
+    
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+// SAVED FOLDER PAGE //
+
+.saved-container {
+  padding: 20px;
+  background-color: rgba(white, 0.7); 
+  background-size: cover;
+  align-items: center;
+
+  max-width: 1600px;
+  height: auto;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 30px;
+  font-size: 25px;
+  color: $mainBlue;
+  cursor: pointer;
+
+}
+
+.projectSAVED {
+  max-width: auto;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 150px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.savedRow {
+  display: flex;
+}
+
+.project-header {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.project-title{
+  width: 50%;
+  font-size: 30px;
+}
+
+.project-description{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}

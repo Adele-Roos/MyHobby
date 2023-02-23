@@ -1,0 +1,130 @@
+#contact-body {
+    padding: 0;
+    background-image: url(https://img.freepik.com/free-vector/abstract-background-with-colourful-watercolour-splatter-design_1048-14567.jpg?w=826&t=st=1667215124~exp=1667215724~hmac=60289475bc86e56593fbb0356669bfebbfcabe4496708cc4256614309c75cf2a);
+    background-size: cover;
+    align-items: center;
+}
+
+.contact-container {
+
+    display: grid;
+        grid-template-areas:
+          'menu main main main main'
+          'menu footer footer footer footer';
+        gap: 50px;
+        background-color: rgba(white, 0.3);
+        padding: 60px;
+        height: 100%;
+        margin-top: 150px;
+        justify-content: center;
+        align-content: center;
+        background-position: relative;
+      }
+
+
+.contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+
+    &-title {
+        margin-top: 150px;
+        color: white;
+        transition: all 4s ease-in;
+    }
+        
+    &-title h1 {
+        font-family: $font-4;
+        font-size: 10rem;
+        line-height: 3;
+        color: white;
+        text-shadow: 2px 2px 8px #000000;
+    }
+
+    &-subtitle h2 {
+            font-family: $font-3;
+            font-size: 5rem;
+            font-size: 1.5rem;
+            }
+    
+    form {
+        margin-top: 30px;
+        
+    }
+    
+    .form-control {
+        width: 600px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #111d71;
+        color: #111d71;
+        font-size: 22px;
+        font-weight: bolder;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .form-control .submit {
+        background-color: $mainRed;
+    
+    #contact-form {
+        background: transparent;
+        font-weight: bold;
+    
+    }
+
+    .input {
+        height: 45px;
+    }
+  
+    form .submit {
+        background: $mainBlue;
+        border-color: transparent;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    
+    ::placeholder {
+        color: $mainBlue;
+        font-size: 17px;        
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color: $mainBlue;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+       color: $mainBlue;
+      }
+    }}
+
+button .mapBtn {
+    width: 200px;
+    padding: 15px 25px;
+    margin: 0 auto;
+    font-size: 25px;
+    background-color: rgba($mainRed, 0.7);
+    color: $mainBlue;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: $paraGray, 0.3;
+}
+
+.mapBtn:hover {
+    cursor: pointer;
+}
+
+.fa-arrow-down {
+    color: white;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SAVED ITEMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles/styles.css">
+    <script src="https://kit.fontawesome.com/468b7afe05.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body id="book-body">
+    <nav class="navbar">
+      <div class="navbar-logo">Adéle's Art</div>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./projects.html">PROJECTS</a></li>
+        <li class="saved_folder">
+          <a href="./saved.html">
+            SAVED PROJECTS <i class="fa-regular fa-folder-open"></i><span class="counter"> 0</span></li>
+          </a>
+          </li>
+        <li><a href="./contact.html">CONTACT</a></li>
+        <li><a href="./book.html">BOOK A CLASS</a></li>
+      </ul> 
+    </nav> 
+
+ <div class="saved-container">
+    <div class="page-section">
+      <h2 class="section-title">My Projects</h2>
+      <h2 class="section-subtitle">Featured projects you saved for later</h2>
+    </div>
+
+    <div class="project-header">
+      <h5 class="project-title">PROJECT & DESCRIPTION</h5>
+  </div>    
+  <!-- object array from local storage injected into "projectsSAVED" div for display-->
+    <div class="projectsSAVED">
+
+    </div>
+  </div>
+      <script src="./main.js"></script>
+    </body>
+  </html>

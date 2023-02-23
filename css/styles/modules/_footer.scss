@@ -1,0 +1,20 @@
+.footer {
+    position:inherit;
+    background-color: $mainBlue;
+    padding: 3rem 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+
+    &__text {
+        font-size: 3rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+
+    &__link {
+        color: &mainRed;
+        
+    }
+}

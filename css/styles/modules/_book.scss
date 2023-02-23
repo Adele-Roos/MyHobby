@@ -1,0 +1,216 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.item3 .gallery {
+max-width: 700px;
+background-color: $paraGray;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+  gap: 50px;
+  background-color: rgba(white, 0.5);
+  padding: 60px;
+  max-width: 3000px; 
+  height: 100%;
+  margin-top: 150px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+#book-body {
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-vector/colorful-watercolor-background_23-2148492944.jpg?w=826&t=st=1667245630~exp=1667246230~hmac=fbfedab2c470a558eda557653dd81a7d4fc09e4b19ada4bbb5072e07652751a8');
+    background-size: cover;
+    display:flex;
+    align-content:space-between;
+    justify-content: center;
+}
+
+.section-head {
+    font-family: $font-4;
+    font-style: italic;
+    color: $mainBlue;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+form {
+    background-color: rgba(white, 0.5);
+    border-radius: 10px;
+    font-family: Avenir;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    height:fit-content;
+   
+  }
+  
+  #form-prompt {
+    color: $mainBlue;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  label {
+    font-size: 25px;
+  }
+  input[type="text"] {
+  font-size: 16px;
+}
+
+input[type="email"] {
+  font-size: 16px;
+}
+  
+  button { 
+    margin-bottom: 10px; 
+    padding: 8px;
+    background-color: $mainRed;
+  }
+  
+  button:hover, input:hover, label:hover { 
+    cursor: pointer; 
+    color: white;
+  }
+
+::placeholder {
+    font-size: 20px;
+    color: grey;
+    opacity: 1; /* Firefox */
+  }
+
+  .fa-envelope {
+    font-size: 110px;
+    color: $mainBlue;
+    margin-left: 5px;
+    float: left;
+}
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: grey;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: grey;
+  }
+
+table {
+  table-layout: fixed;
+  text-align: center;
+  width: 1000px;
+  height: 200px;
+  background-color: $mainBlue;
+  margin-top: 20px;
+  font-family: $font-1;
+  font-size: 20px;
+  color:white;
+
+  td {
+    padding: 15px;
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+
+  th {
+    background-color: $mainRed;
+    padding: 18px;
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+
+  img {
+    width: 580px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+h4 {
+  display: flex;
+  align-content: center;
+  font-family: $font-2;
+  color: $mainBlue;
+  font-size: 20px;
+  padding: 0 0;
+  text-align: center;
+}
+
+// Gallery Slider
+
+#slider {
+  width: 1000px;
+  height: 700px;
+  overflow: hidden;
+}
+
+#slider .slides {
+  display: block;
+  width: 7070px;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+#slider .slide {
+  float: left;
+  list-style-type: none;
+  width: 1000px;
+  height: 700px;
+}
+
+
+/**** ****/
+div#dropdown-menu { 
+  position: relative;
+  margin-top: 30px; 
+} 
+div#dropdown-menu a { 
+  padding: 15px; 
+}
+.dropdown-toggle { 
+  padding: 0; background: $mainBlue; 
+}
+/**** ****/
+
+.list {
+  font-size: 26px;
+  color: white;
+  padding: 0;
+
+}
+ul.dropdown { 
+  width: 500px;
+  display: flex-box; 
+  position: absolute; 
+  align-self: center;
+  top: 100%;
+  margin-top: 5px; 
+  background-color: lightgrey; 
+  padding: 0;
+}
+ul.dropdown li a { 
+  text-decoration: none;  
+  display: inline-block; 
+  padding: 0;
+}

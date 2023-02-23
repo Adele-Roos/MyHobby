@@ -1,0 +1,29 @@
+.button {
+    display:inline-block;
+    background-color: $mainRed;
+    padding: 1.3rem 3.2rem;
+    border-radius: 3px;
+    font: weight 400px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+
+
+    @include largePhone {
+        font-size: 1.5rem;
+        padding: 1rem 2.9rem;
+    }
+
+    @include smallPhone {
+        font-size: 1.5rem; 
+        padding: 1rem 2.5rem;
+    }
+
+    &:hover {
+        background-color: $darkRed;
+    }
+
+}
+

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles/styles.css">
+    <script src="https://kit.fontawesome.com/468b7afe05.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+    <title>BookTEST</title>
+
+  </head>
+
+    <!-- booking form with a table and external link to Google maps -->
+  <body id="book-body">
+    <nav class="navbar">
+      <div class="navbar-logo">Adéle's Art</div>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./projects.html">PROJECTS</a></li>
+        <li class="saved_folder">
+          <a href="./saved.html">
+            SAVED PROJECTS <i class="fa-regular fa-folder-open"></i><span class="counter"> 0</span></li>
+          </a>
+          </li>
+        <li><a href="./contact.html">CONTACT</a></li>
+        <li><a href="./book.html">BOOK A CLASS</a></li>
+      </ul> 
+    </nav>  
+
+<div class="grid-container">
+  <div class="item1">
+  </div>
+  <!-- form to assess user level and comment box -->
+  <div class="item2">
+    <form id="form">
+        <p id=form-prompt>What is your experience level?</p>
+        <input type="radio" id="beginner" name="level" value="beginner">
+        <label for="child">no prior experience</label><br>
+        <input type="radio" id="intermediate" name="level" value="intermediate">
+        <label for="adult">some experience</label><br>
+        <input type="radio" id="advanced" name="level" value="advanced">
+        <label for="senior">quite skilled</label>
+
+        <p id=form-prompt>What is your need?</p>
+        <input type="radio" id="more info" name="need" value="more info">
+        <label for="child">more information please</label><br>
+        <input type="radio" id="interested" name="need" value="interested">
+        <label for="adult">interested but have questions</label><br>
+        <input type="radio" id="book dates" name="need" value="book dates">
+        <label for="senior">please send me dates</label><br>
+
+        <br><p id="contact-form" method="post" form action="mailto:adeleroos10@gmail.com" enctype="text/plain">
+        <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+        
+        
+<!-- submit button to email  with animated envelope -->
+        <input email="email" type="email" class="form-control" placeholder="Your Email" required><br>
+        <textarea class="form-control" rows="4" cols="40" name="comment" placeholder="Your comments"></textarea>
+        <div><button class="btn" type="submit">SUBMIT</button></div>
+      </form>
+
+      <div class="envelope"><a><i class="fa-regular fa-envelope"></i></a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <!-- Dropdown menu -->
+      <div id="dropdown-menu">
+        <a class="dropdown-toggle" href="#">BRING TO CLASS</a>
+        <ul class="dropdown">
+          <li><a href="#"><h4>Watercolor Paints</h4></a></li>
+          <li><a href="#"><h4>Brushes</h4></a></li>
+          <li><a href="#"><h4>Masking tape</h4></a></li>
+          <li><a href="#"><h4>Sea sponges</h4></a></li>
+          <li><a href="#"><h4>Painting Board</h4></a></li>
+          <li><a href="#"><h4>Palette</h4></a></li>
+          <li><a href="#"><h4>Graphite Pencils</h4></a></li>
+          <li><a href="#"><h4>Kneaded Eraser</h4></a></li>
+        </ul>
+        </div>
+  </div>
+  <!-- Animated slider with images -->
+  <div class="item3 gallery">
+        <div id="slider">
+            <ul class="slides">
+                <li class="slide slide1"><img src="./IMAGES/img1.JPG"/></li>
+                <li class="slide slide2"><img src="./IMAGES/img2.JPG"/></li>
+                <li class="slide slide3"><img src="./IMAGES/img3.JPG"/></li>
+                <li class="slide slide4"><img src="./IMAGES/img4.JPG"/></li>
+                <li class="slide slide5"><img src="./IMAGES/img5.JPG"/></li>
+                <li class="slide slide6"><img src="./IMAGES/img6.JPG"/></li>
+                <li class="slide slide7"><img src="./IMAGES/img1.JPG"/></li>
+            </ul>
+        </div>
+     </div>  
+  <!-- Tabel -->
+  <div class="item5">
+    <table class="dates" style="padding:10px">
+        <thead>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                </tr>
+              </thead>
+        <tbody>
+            <tr>
+                <td>9 - 12 am</td>
+                <td>NO CLASS</td>
+                <td>9 - 12 am</td>
+                <td>NO CLASS</td>
+                <td>9 - 12 am</td>
+                <td>NO CLASS</td>
+            </tr>
+            <tr>
+                <td>NO CLASS</td>
+                <td>1 - 4 pm</td>
+                <td>NO CLASS</td>
+                <td>1 - 4 pm</td>
+                <td>NO CLASS</td>
+                <td>1 - 4 pm</td>
+            </tr>
+            <tr>
+              <td colspan="6"><img src="https://img.freepik.com/free-photo/side-view-paint-brush-abstract-watercolor-painting_23-2148801984.jpg?w=900&t=st=1667299061~exp=1667299661~hmac=46a8a34a0a83723fd9097443118d8433a841038e4d8b497352fa5aa0ca801497"><br>
+                <h1>Join your first class for free!</h1>
+              </td>
+            </tr>
+          </table>
+  </div>
+</div>
+
+    
+    
+      <script src="./main.js"></script>
+    </body>
+</html>

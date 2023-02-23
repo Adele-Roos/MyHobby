@@ -1,0 +1,51 @@
+.hero {background: linear-gradient(rgba($mainBlue, 0.7), rgba($mainBlue, 0.7)), url(https://img.freepik.com/free-photo/copy-space-wooden-background-paint-brushes_23-2148660983.jpg?w=900&t=st=1666799764~exp=1666800364~hmac=9f3dadd2981b932e9ac34797f9f7e12ada6e213e71f863256103849c38162c52) top left no-repeat;
+    background-size: cover;
+    
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    &__title {
+        font-family: $font-3;
+        font-size: 8rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        line-height: 0.7;
+
+
+        &--faded {
+            display: inline-block;
+            font-family: $font-4;
+            color: rgba(rgba(white, 0.7), 0.50);
+            transform: scale(1.2);
+            margin: 0 2rem;
+
+        }
+
+        &--red {
+            color: $mainRed;
+            font-family: $font-4;
+            font-style: italic;
+            transform: scale(1.2);
+        }
+    }
+
+    &__subtitle {
+        font-weight: 100;
+        font-size: 3rem;
+        margin: 6rem auto;
+        width: 60%;
+        line-height: 2;
+    }
+
+    .fa-quote-left {
+        color: $mainRed;
+    }
+
+    .fa-quote-right {
+        color: $mainRed;
+    }
+}
